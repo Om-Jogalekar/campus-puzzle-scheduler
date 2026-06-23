@@ -1,0 +1,2 @@
+status,class_id,module,slot_id,day,start,end,room_id,campus,students,room_capacity,waste_or_reason
+Unscheduled,BIG101,Large Lecture,N/A,N/A,N/A,N/A,N/A,Berlin,80,N/A,Backtracking could not find a valid repair.

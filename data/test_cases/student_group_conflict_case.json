@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "dataset_name": "Student Group Conflict Case",
+    "description": "Multiple classes share the same student group and must not overlap."
+  },
+  "time_slots": [
+    { "slot_id": "MON-AM", "day": "Monday", "start": "09:00", "end": "12:00" },
+    { "slot_id": "MON-PM", "day": "Monday", "start": "13:00", "end": "16:00" },
+    { "slot_id": "TUE-AM", "day": "Tuesday", "start": "09:00", "end": "12:00" }
+  ],
+  "rooms": [
+    {
+      "room_id": "R40",
+      "campus": "Berlin",
+      "capacity": 40,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "R60",
+      "campus": "Berlin",
+      "capacity": 60,
+      "features": [],
+      "available_slots": "ALL"
+    }
+  ],
+  "professors": [
+    {
+      "professor_id": "PROF-A",
+      "name": "Professor A",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-B",
+      "name": "Professor B",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-C",
+      "name": "Professor C",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    }
+  ],
+  "student_groups": [
+    { "group_id": "G-SHARED", "programme": "CS", "year": 1, "size": 35 },
+    { "group_id": "G-OTHER", "programme": "DS", "year": 1, "size": 35 }
+  ],
+  "classes": [
+    {
+      "class_id": "S1",
+      "module": "Math",
+      "students": 35,
+      "professor_id": "PROF-A",
+      "student_groups": ["G-SHARED"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "S2",
+      "module": "Programming",
+      "students": 35,
+      "professor_id": "PROF-B",
+      "student_groups": ["G-SHARED"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "S3",
+      "module": "Databases",
+      "students": 35,
+      "professor_id": "PROF-C",
+      "student_groups": ["G-SHARED"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "S4",
+      "module": "Statistics",
+      "students": 35,
+      "professor_id": "PROF-A",
+      "student_groups": ["G-OTHER"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "MEDIUM"
+    }
+  ],
+  "scheduling_rules": {
+    "hard_constraints": [],
+    "soft_constraints": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "dataset_name": "Professor Conflict Case",
+    "description": "Several classes share the same professor and must be separated into different slots."
+  },
+  "time_slots": [
+    { "slot_id": "MON-AM", "day": "Monday", "start": "09:00", "end": "12:00" },
+    { "slot_id": "MON-PM", "day": "Monday", "start": "13:00", "end": "16:00" },
+    { "slot_id": "TUE-AM", "day": "Tuesday", "start": "09:00", "end": "12:00" }
+  ],
+  "rooms": [
+    {
+      "room_id": "R50",
+      "campus": "Berlin",
+      "capacity": 50,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "R80",
+      "campus": "Berlin",
+      "capacity": 80,
+      "features": [],
+      "available_slots": "ALL"
+    }
+  ],
+  "professors": [
+    {
+      "professor_id": "PROF-SAME",
+      "name": "Professor Same",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-X",
+      "name": "Professor X",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    }
+  ],
+  "student_groups": [
+    { "group_id": "G1", "programme": "CS", "year": 1, "size": 30 },
+    { "group_id": "G2", "programme": "DS", "year": 1, "size": 30 },
+    { "group_id": "G3", "programme": "BA", "year": 1, "size": 30 }
+  ],
+  "classes": [
+    {
+      "class_id": "P1",
+      "module": "Module 1",
+      "students": 30,
+      "professor_id": "PROF-SAME",
+      "student_groups": ["G1"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "P2",
+      "module": "Module 2",
+      "students": 30,
+      "professor_id": "PROF-SAME",
+      "student_groups": ["G2"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "P3",
+      "module": "Module 3",
+      "students": 30,
+      "professor_id": "PROF-SAME",
+      "student_groups": ["G3"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "X1",
+      "module": "Independent",
+      "students": 45,
+      "professor_id": "PROF-X",
+      "student_groups": ["G1"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "MEDIUM"
+    }
+  ],
+  "scheduling_rules": {
+    "hard_constraints": [],
+    "soft_constraints": []
+  }
+}

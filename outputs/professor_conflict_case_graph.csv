@@ -1,0 +1,5 @@
+class_id,module,assigned_slot_id,day,start,end,professor_id,student_groups
+P1,Module 1,MON-AM,Monday,09:00,12:00,PROF-SAME,G1
+P2,Module 2,MON-PM,Monday,13:00,16:00,PROF-SAME,G2
+P3,Module 3,TUE-AM,Tuesday,09:00,12:00,PROF-SAME,G3
+X1,Independent,MON-PM,Monday,13:00,16:00,PROF-X,G1

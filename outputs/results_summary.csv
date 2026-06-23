@@ -1,0 +1,4 @@
+stage,scheduled_classes,room_conflicts,professor_conflicts,student_group_conflicts,capacity_violations,feature_violations,campus_violations,professor_availability_violations,room_availability_violations,total_waste
+Greedy Baseline,12,0,0,0,0,0,0,0,0,43
+Graph Coloring + DP Room Optimisation,10,0,0,0,0,0,0,0,0,43
+Backtracking Final Repair,12,0,0,0,0,0,0,0,0,43

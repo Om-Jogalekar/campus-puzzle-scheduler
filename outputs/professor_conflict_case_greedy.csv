@@ -1,0 +1,5 @@
+status,class_id,module,slot_id,day,start,end,room_id,campus,students,room_capacity,waste_or_reason
+Scheduled,P1,Module 1,MON-AM,Monday,09:00,12:00,R50,Berlin,30,50,Wasted 20 seats
+Scheduled,P2,Module 2,MON-PM,Monday,13:00,16:00,R50,Berlin,30,50,Wasted 20 seats
+Scheduled,P3,Module 3,TUE-AM,Tuesday,09:00,12:00,R50,Berlin,30,50,Wasted 20 seats
+Scheduled,X1,Independent,MON-PM,Monday,13:00,16:00,R80,Berlin,45,80,Wasted 35 seats

@@ -1,0 +1,5 @@
+class_id,module,assigned_slot_id,day,start,end,professor_id,student_groups
+C1,Algorithms,MON-AM,Monday,09:00,12:00,PROF-A,G1
+C4,Databases,MON-PM,Monday,13:00,16:00,PROF-A,G1
+C2,Statistics,MON-AM,Monday,09:00,12:00,PROF-B,G2
+C3,Business,MON-AM,Monday,09:00,12:00,PROF-C,G3

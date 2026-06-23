@@ -1,0 +1,13 @@
+class_id,module,assigned_slot_id,day,start,end,professor_id,student_groups
+AI201,Artificial Intelligence,MON-AM,Monday,09:00,12:00,PROF-OMAR,"Y2-CS, Y2-DS"
+MATH101,Intro to Mathematics,MON-AM,Monday,09:00,12:00,PROF-AHMAD,"Y1-CS, Y1-DS"
+DB201,Databases,MON-PM,Monday,13:00,16:00,PROF-OMAR,Y2-CS
+SE202,Software Engineering,TUE-AM,Tuesday,09:00,12:00,PROF-HAMID,Y2-CS
+MBA501,Strategic Management,MON-EVE,Monday,16:00,19:00,PROF-OMAR,MBA-G1
+CS101,Intro to Programming,MON-PM,Monday,13:00,16:00,PROF-ALEXANDER,Y1-CS
+WEB101,Web Development,MON-EVE,Monday,16:00,19:00,PROF-ALEXANDER,Y1-CS
+ML202,Machine Learning,TUE-AM,Tuesday,09:00,12:00,PROF-SARA,Y2-DS
+ALG301,Advanced Algorithms,MON-AM,Monday,09:00,12:00,PROF-HAMID,Y3-CS
+MBA502,Business Analytics,TUE-PM,Tuesday,13:00,16:00,PROF-SARA,MBA-G1
+STAT101,Statistics,MON-PM,Monday,13:00,16:00,PROF-AHMAD,Y1-DS
+CLOUD301,Cloud Computing,WED-AM,Wednesday,09:00,12:00,PROF-MAZHAR,Y3-CS

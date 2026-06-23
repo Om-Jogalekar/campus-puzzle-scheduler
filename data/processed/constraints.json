@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "dataset_name": "Campus Puzzle Synthetic Scheduling Dataset",
+    "description": "Clean synthetic scheduling dataset inspired by the provided Excel workbook. It includes professor availability, room capacity, room availability, student groups, classes, campus restrictions, room features, and scheduling rules.",
+    "raw_reference_file": "data/raw/Tentative Schedule Data.xlsx",
+    "data_type": "synthetic_algorithm_ready_dataset",
+    "important_note": "The Excel workbook was used only as a realistic reference for professor availability patterns, room capacities, campuses, and room types. This JSON dataset was manually created so the scheduling algorithms have complete and controlled input data."
+  },
+
+  "time_slots": [
+    {
+      "slot_id": "MON-AM",
+      "day": "Monday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "slot_id": "MON-PM",
+      "day": "Monday",
+      "start": "13:00",
+      "end": "16:00"
+    },
+    {
+      "slot_id": "MON-EVE",
+      "day": "Monday",
+      "start": "16:00",
+      "end": "19:00"
+    },
+
+    {
+      "slot_id": "TUE-AM",
+      "day": "Tuesday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "slot_id": "TUE-PM",
+      "day": "Tuesday",
+      "start": "13:00",
+      "end": "16:00"
+    },
+    {
+      "slot_id": "TUE-EVE",
+      "day": "Tuesday",
+      "start": "16:00",
+      "end": "19:00"
+    },
+
+    {
+      "slot_id": "WED-AM",
+      "day": "Wednesday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "slot_id": "WED-PM",
+      "day": "Wednesday",
+      "start": "13:00",
+      "end": "16:00"
+    },
+    {
+      "slot_id": "WED-EVE",
+      "day": "Wednesday",
+      "start": "16:00",
+      "end": "19:00"
+    },
+
+    {
+      "slot_id": "THU-AM",
+      "day": "Thursday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "slot_id": "THU-PM",
+      "day": "Thursday",
+      "start": "13:00",
+      "end": "16:00"
+    },
+    {
+      "slot_id": "THU-EVE",
+      "day": "Thursday",
+      "start": "16:00",
+      "end": "19:00"
+    },
+
+    {
+      "slot_id": "FRI-AM",
+      "day": "Friday",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    {
+      "slot_id": "FRI-PM",
+      "day": "Friday",
+      "start": "13:00",
+      "end": "16:00"
+    }
+  ],
+
+  "rooms": [
+    {
+      "room_id": "BER-D003",
+      "campus": "Berlin",
+      "capacity": 46,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "BER-D004",
+      "campus": "Berlin",
+      "capacity": 77,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "BER-D005",
+      "campus": "Berlin",
+      "capacity": 34,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "BER-D105",
+      "campus": "Berlin",
+      "capacity": 31,
+      "features": ["PC_LAB"],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "BER-D208",
+      "campus": "Berlin",
+      "capacity": 41,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "BER-D304",
+      "campus": "Berlin",
+      "capacity": 53,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "POT-3",
+      "campus": "Potsdam",
+      "capacity": 35,
+      "features": [],
+      "available_slots": ["MON-AM", "MON-PM", "MON-EVE"]
+    },
+    {
+      "room_id": "POT-6",
+      "campus": "Potsdam",
+      "capacity": 50,
+      "features": [],
+      "available_slots": ["MON-AM", "MON-PM", "TUE-PM", "WED-PM", "THU-PM"]
+    },
+    {
+      "room_id": "POT-AUDITORIUM",
+      "campus": "Potsdam",
+      "capacity": 60,
+      "features": [],
+      "available_slots": [
+        "MON-AM",
+        "MON-PM",
+        "TUE-AM",
+        "TUE-PM",
+        "WED-AM",
+        "WED-PM"
+      ]
+    },
+    {
+      "room_id": "POT-MACPOOL",
+      "campus": "Potsdam",
+      "capacity": 25,
+      "features": ["MAC_LAB"],
+      "available_slots": ["MON-PM", "TUE-PM", "WED-PM", "THU-PM"]
+    }
+  ],
+
+  "professors": [
+    {
+      "professor_id": "PROF-ALEXANDER",
+      "name": "Alexander",
+      "type": "freelancer",
+      "availability_note": "Available Mondays and Tuesdays from 13:00.",
+      "available_slots": ["MON-PM", "MON-EVE", "TUE-PM", "TUE-EVE"]
+    },
+    {
+      "professor_id": "PROF-AHMAD",
+      "name": "Ahmad",
+      "type": "internal",
+      "availability_note": "Available Monday, Wednesday, and Friday.",
+      "available_slots": [
+        "MON-AM",
+        "MON-PM",
+        "WED-AM",
+        "WED-PM",
+        "FRI-AM",
+        "FRI-PM"
+      ]
+    },
+    {
+      "professor_id": "PROF-OMAR",
+      "name": "Omar",
+      "type": "freelancer",
+      "availability_note": "Full availability.",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-HAMID",
+      "name": "Hamid",
+      "type": "freelancer",
+      "availability_note": "Available Monday to Thursday during daytime only.",
+      "available_slots": [
+        "MON-AM",
+        "MON-PM",
+        "TUE-AM",
+        "TUE-PM",
+        "WED-AM",
+        "WED-PM",
+        "THU-AM",
+        "THU-PM"
+      ]
+    },
+    {
+      "professor_id": "PROF-SARA",
+      "name": "Sara",
+      "type": "internal",
+      "availability_note": "Available Tuesday and Thursday.",
+      "available_slots": ["TUE-AM", "TUE-PM", "THU-AM", "THU-PM"]
+    },
+    {
+      "professor_id": "PROF-MAZHAR",
+      "name": "Mazhar",
+      "type": "internal",
+      "availability_note": "Available Wednesday and Friday.",
+      "available_slots": ["WED-AM", "WED-PM", "FRI-AM", "FRI-PM"]
+    }
+  ],
+
+  "student_groups": [
+    {
+      "group_id": "Y1-CS",
+      "programme": "Computer Science",
+      "year": 1,
+      "size": 55
+    },
+    {
+      "group_id": "Y1-DS",
+      "programme": "Data Science",
+      "year": 1,
+      "size": 48
+    },
+    {
+      "group_id": "Y2-CS",
+      "programme": "Computer Science",
+      "year": 2,
+      "size": 52
+    },
+    {
+      "group_id": "Y2-DS",
+      "programme": "Data Science",
+      "year": 2,
+      "size": 35
+    },
+    {
+      "group_id": "Y3-CS",
+      "programme": "Computer Science",
+      "year": 3,
+      "size": 42
+    },
+    {
+      "group_id": "MBA-G1",
+      "programme": "MBA",
+      "year": 1,
+      "size": 60
+    }
+  ],
+
+  "classes": [
+    {
+      "class_id": "CS101",
+      "module": "Intro to Programming",
+      "students": 28,
+      "professor_id": "PROF-ALEXANDER",
+      "student_groups": ["Y1-CS"],
+      "campus": "Berlin",
+      "required_features": ["PC_LAB"],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "MATH101",
+      "module": "Intro to Mathematics",
+      "students": 55,
+      "professor_id": "PROF-AHMAD",
+      "student_groups": ["Y1-CS", "Y1-DS"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "WEB101",
+      "module": "Web Development",
+      "students": 24,
+      "professor_id": "PROF-ALEXANDER",
+      "student_groups": ["Y1-CS"],
+      "campus": "Berlin",
+      "required_features": ["PC_LAB"],
+      "priority": "MEDIUM"
+    },
+    {
+      "class_id": "STAT101",
+      "module": "Statistics",
+      "students": 48,
+      "professor_id": "PROF-AHMAD",
+      "student_groups": ["Y1-DS"],
+      "campus": "Potsdam",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "DB201",
+      "module": "Databases",
+      "students": 40,
+      "professor_id": "PROF-OMAR",
+      "student_groups": ["Y2-CS"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "MEDIUM"
+    },
+    {
+      "class_id": "SE202",
+      "module": "Software Engineering",
+      "students": 52,
+      "professor_id": "PROF-HAMID",
+      "student_groups": ["Y2-CS"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "AI201",
+      "module": "Artificial Intelligence",
+      "students": 35,
+      "professor_id": "PROF-OMAR",
+      "student_groups": ["Y2-CS", "Y2-DS"],
+      "campus": "Potsdam",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "ML202",
+      "module": "Machine Learning",
+      "students": 25,
+      "professor_id": "PROF-SARA",
+      "student_groups": ["Y2-DS"],
+      "campus": "Potsdam",
+      "required_features": ["MAC_LAB"],
+      "priority": "MEDIUM"
+    },
+    {
+      "class_id": "ALG301",
+      "module": "Advanced Algorithms",
+      "students": 42,
+      "professor_id": "PROF-HAMID",
+      "student_groups": ["Y3-CS"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "CLOUD301",
+      "module": "Cloud Computing",
+      "students": 28,
+      "professor_id": "PROF-MAZHAR",
+      "student_groups": ["Y3-CS"],
+      "campus": "Berlin",
+      "required_features": ["PC_LAB"],
+      "priority": "MEDIUM"
+    },
+    {
+      "class_id": "MBA501",
+      "module": "Strategic Management",
+      "students": 60,
+      "professor_id": "PROF-OMAR",
+      "student_groups": ["MBA-G1"],
+      "campus": "Potsdam",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "MBA502",
+      "module": "Business Analytics",
+      "students": 60,
+      "professor_id": "PROF-SARA",
+      "student_groups": ["MBA-G1"],
+      "campus": "Potsdam",
+      "required_features": [],
+      "priority": "HIGH"
+    }
+  ],
+
+  "scheduling_rules": {
+    "hard_constraints": [
+      "A professor cannot teach two classes in the same time slot.",
+      "A student group cannot attend two classes in the same time slot.",
+      "A room cannot be assigned to two classes in the same time slot.",
+      "Room capacity must be greater than or equal to class size.",
+      "Required room features must be satisfied.",
+      "Professor must be available in the assigned time slot.",
+      "Room must be available in the assigned time slot.",
+      "Class campus must match room campus."
+    ],
+    "soft_constraints": [
+      "Minimise wasted room capacity.",
+      "Prefer scheduling high-priority classes first.",
+      "Avoid using large rooms for small classes when smaller suitable rooms are available."
+    ]
+  }
+}

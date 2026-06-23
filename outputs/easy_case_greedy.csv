@@ -1,0 +1,4 @@
+status,class_id,module,slot_id,day,start,end,room_id,campus,students,room_capacity,waste_or_reason
+Scheduled,C1,Programming,MON-AM,Monday,09:00,12:00,R-PC,Berlin,25,35,Wasted 10 seats
+Scheduled,C3,Management,MON-AM,Monday,09:00,12:00,R-MEDIUM,Berlin,50,60,Wasted 10 seats
+Scheduled,C2,Math,MON-AM,Monday,09:00,12:00,R-SMALL,Berlin,30,30,Perfect Fit

@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "dataset_name": "Easy Scheduling Case",
+    "description": "Small dataset where all classes should be scheduled easily."
+  },
+  "time_slots": [
+    { "slot_id": "MON-AM", "day": "Monday", "start": "09:00", "end": "12:00" },
+    { "slot_id": "MON-PM", "day": "Monday", "start": "13:00", "end": "16:00" },
+    { "slot_id": "TUE-AM", "day": "Tuesday", "start": "09:00", "end": "12:00" },
+    { "slot_id": "TUE-PM", "day": "Tuesday", "start": "13:00", "end": "16:00" }
+  ],
+  "rooms": [
+    {
+      "room_id": "R-SMALL",
+      "campus": "Berlin",
+      "capacity": 30,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "R-MEDIUM",
+      "campus": "Berlin",
+      "capacity": 60,
+      "features": [],
+      "available_slots": "ALL"
+    },
+    {
+      "room_id": "R-PC",
+      "campus": "Berlin",
+      "capacity": 35,
+      "features": ["PC_LAB"],
+      "available_slots": "ALL"
+    }
+  ],
+  "professors": [
+    {
+      "professor_id": "PROF-A",
+      "name": "Professor A",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-B",
+      "name": "Professor B",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    },
+    {
+      "professor_id": "PROF-C",
+      "name": "Professor C",
+      "type": "internal",
+      "availability_note": "Full availability",
+      "available_slots": "ALL"
+    }
+  ],
+  "student_groups": [
+    {
+      "group_id": "G1",
+      "programme": "Computer Science",
+      "year": 1,
+      "size": 25
+    },
+    { "group_id": "G2", "programme": "Data Science", "year": 1, "size": 30 },
+    { "group_id": "G3", "programme": "Business", "year": 1, "size": 50 }
+  ],
+  "classes": [
+    {
+      "class_id": "C1",
+      "module": "Programming",
+      "students": 25,
+      "professor_id": "PROF-A",
+      "student_groups": ["G1"],
+      "campus": "Berlin",
+      "required_features": ["PC_LAB"],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "C2",
+      "module": "Math",
+      "students": 30,
+      "professor_id": "PROF-B",
+      "student_groups": ["G2"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "HIGH"
+    },
+    {
+      "class_id": "C3",
+      "module": "Management",
+      "students": 50,
+      "professor_id": "PROF-C",
+      "student_groups": ["G3"],
+      "campus": "Berlin",
+      "required_features": [],
+      "priority": "MEDIUM"
+    }
+  ],
+  "scheduling_rules": {
+    "hard_constraints": [],
+    "soft_constraints": []
+  }
+}

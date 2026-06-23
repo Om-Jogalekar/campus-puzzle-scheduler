@@ -1,0 +1,13 @@
+status,class_id,module,slot_id,day,start,end,room_id,campus,students,room_capacity,waste_or_reason
+Scheduled,AI201,Artificial Intelligence,MON-AM,Monday,09:00,12:00,POT-3,Potsdam,35,35,Perfect Fit
+Scheduled,ALG301,Advanced Algorithms,MON-AM,Monday,09:00,12:00,BER-D003,Berlin,42,46,Wasted 4 seats
+Scheduled,MATH101,Intro to Mathematics,MON-AM,Monday,09:00,12:00,BER-D004,Berlin,55,77,Wasted 22 seats
+Scheduled,CS101,Intro to Programming,MON-PM,Monday,13:00,16:00,BER-D105,Berlin,28,31,Wasted 3 seats
+Scheduled,DB201,Databases,MON-PM,Monday,13:00,16:00,BER-D208,Berlin,40,41,Wasted 1 seats
+Scheduled,STAT101,Statistics,MON-PM,Monday,13:00,16:00,POT-6,Potsdam,48,50,Wasted 2 seats
+Scheduled,SE202,Software Engineering,TUE-AM,Tuesday,09:00,12:00,BER-D304,Berlin,52,53,Wasted 1 seats
+Scheduled,WEB101,Web Development,MON-EVE,Monday,16:00,19:00,BER-D105,Berlin,24,31,Wasted 7 seats
+Scheduled,MBA502,Business Analytics,TUE-PM,Tuesday,13:00,16:00,POT-AUDITORIUM,Potsdam,60,60,Perfect Fit
+Scheduled,CLOUD301,Cloud Computing,WED-AM,Wednesday,09:00,12:00,BER-D105,Berlin,28,31,Wasted 3 seats
+Unscheduled,ML202,Machine Learning,N/A,N/A,N/A,N/A,N/A,Potsdam,25,N/A,No feasible room assignment in slot TUE-AM
+Unscheduled,MBA501,Strategic Management,N/A,N/A,N/A,N/A,N/A,Potsdam,60,N/A,No feasible room assignment in slot MON-EVE
